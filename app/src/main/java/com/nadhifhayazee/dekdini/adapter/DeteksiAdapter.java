@@ -71,7 +71,8 @@ public class DeteksiAdapter extends RecyclerView.Adapter<DeteksiAdapter.ViewHold
             options.add("Yakin");
             options.add("Sangat Yakin");
 
-            ArrayAdapter adapter = new ArrayAdapter(itemView.getContext(), android.R.layout.simple_spinner_dropdown_item, options);
+            ArrayAdapter adapter = new ArrayAdapter(itemView.getContext(),
+                    android.R.layout.simple_spinner_dropdown_item, options);
             spinner.setAdapter(adapter);
             spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
